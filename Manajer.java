@@ -21,12 +21,12 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author asus
  */
-public class Dashboard extends javax.swing.JFrame {
+public class Manajer extends javax.swing.JFrame {
 
     /**
      * Creates new form Dashboard
      */
-    public Dashboard() {
+    public Manajer() {
         initComponents();
         updateTotalBarangMasuk();
         updateTotalBarangKeluar();
@@ -385,14 +385,14 @@ public void updateTotalCustomer() {
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Selamat Datang Kembali Manager");
+        jLabel7.setText("Selamat Datang Kembali Manajer");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(453, 453, 453)
+                .addGap(393, 393, 393)
                 .addComponent(jLabel7)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -827,7 +827,7 @@ public void updateTotalCustomer() {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Dashboard().setVisible(true);
+                new Manajer().setVisible(true);
             }
         });
     }
